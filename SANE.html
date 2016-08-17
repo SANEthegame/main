@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<body id = "game">
+	<script id = "change"> 
+	
+	var scripts = ["js/blm.js","js/wh.js","js/islam.js","js/catcalling.js"];
+	var l = 0;
+	function changelvl(){
+	    var scriptElem=document.createElement('script');
+	    scriptElem.setAttribute("type","text/javascript");
+	    scriptElem.setAttribute("src", scripts[l]);
+	    
+	    document.getElementById("button").innerHTML = "Next";
+
+	    var body = document.getElementsByTagName("body")[0];
+	    if (l == 0) {
+	    	body.appendChild(scriptElem);
+	    };
+
+	    if (l >= 1) {
+	    	body.removeChild(body.childNodes[11]);
+	    	body.replaceChild(scriptElem, body.childNodes[10]);
+	    };
+		 
+	    l++;
+	};
+	
+	
+	</script>
+	<!-- <script id = "blm" src= "js/canvas.js"> </script> -->
+	<link rel = "stylesheet" href = "css/myStyle.css">
+	</body>
+	<button id = "button" onclick = "changelvl()">Start</button><br>
+
+</html>
