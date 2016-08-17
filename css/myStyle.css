@@ -1,0 +1,26 @@
+
+canvas {
+	display: block;
+	margin: auto;
+    width: 97%;
+    border: 3px solid green;
+    
+}
+
+button {
+	display: block;
+	margin: auto;
+	width: 20%;
+	padding: 10px;
+	background: green;
+	color: white;
+	font-size; 20px;
+	font-weight:bolder;
+
+
+}
+
+h4 {
+	text-align: center;
+
+}
